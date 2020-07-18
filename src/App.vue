@@ -2,6 +2,7 @@
     <div>
         <section id="top">
             <header>
+                <img src="/profile.jpg" />
                 <h1>
                     <strong>hello,</strong>
                     <br />my name's Oscar
@@ -20,7 +21,7 @@
 <style lang="scss" scoped>
     #top {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
         justify-content: center;
         align-items: center;
@@ -44,6 +45,22 @@
         flex-direction: column;
 
         color: #1d3557;
+
+        position: relative;
+
+        > img {
+            height: 100%;
+            width: auto;
+
+            overflow: hidden;
+
+            position: absolute;
+
+            left: -35%;   
+            bottom: -75%; 
+
+            z-index: -1;    
+        }
 
         > h1 {
             font-weight: 400;
